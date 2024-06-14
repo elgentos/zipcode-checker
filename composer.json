@@ -1,6 +1,6 @@
 {
-    "name": "elgentos/zipcode-checker",
-    "description": "Zipcode checker",
+    "name": "elgentos/magento2-zipcode-checker",
+    "description": "Magento2 Zipcode checker",
     "type": "magento2-module",
     "license": "MIT",
     "minimum-stability": "dev",
