@@ -16,7 +16,7 @@
         "magento/module-catalog-graph-ql": "^100.4",
         "magento/module-search": "^101.1",
         "magento/module-store": "^101.1",
-        "hyva-themes/magento2-hyva-checkout": "^1.1.18"
+        "hyva-themes/magento2-hyva-checkout": "^1.1.16"
     },
     "autoload": {
         "psr-4": {
