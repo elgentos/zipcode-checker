@@ -7,6 +7,8 @@
 
 declare(strict_types=1);
 
+namespace Elgentos\ZipcodeChecker\Console\Command;
+
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -32,8 +34,6 @@ class SetupDutchFields extends Command
     ){
         parent::__construct($name);
     }
-
-    private const NAME = 'name';
 
     protected function configure(): void
     {
