@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+/** @var Template $block */
+/** @var EntityFieldInterface $element */
+/** @var ViewModelRegistry $viewModels */
+/** @var Escaper $escaper */
+/** @var MagewireFormComponent $magewire */
+
+/** @Tailwind md:w-1/4 md:w-2/4 md:w-3/4 md:w-4/4 mb-2 */
+
+use Hyva\Checkout\Model\Form\EntityFieldInterface;
+use Hyva\Theme\Model\ViewModelRegistry;
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+use Magewirephp\Magewire\Component\Form as MagewireFormComponent;
+
+$element = $block->getData('element');
+$attributes = $element->getAttributes();
+?>
+<?php if ($element->hasRelatives()): ?>
+    <div class="grid grid-cols-2 gap-y-2 gap-x-4 place-items-end">
+<?php endif ?>
+
+<div class="w-full font-medium text-gray-700 <?= /* @noEscape */ $element->isRequired() ? 'required' : 'not-required' ?>">
+    <h1>SEARCH</h1>
+    <?= /* @noEscape */ $element->getRenderer()->renderAfter($element) ?>
+</div>
+
